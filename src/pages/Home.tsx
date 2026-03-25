@@ -51,21 +51,21 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-primary">
+      <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-primary">
         <div className="absolute inset-0 z-0 bg-primary">
           <motion.img 
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 10, ease: "easeOut" }}
-            src="https://spoonerscleaning.ie/wp-content/uploads/2024/07/download-6-1080x675.webp" 
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
             alt="Luxury home exterior" 
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-cover opacity-50"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-primary/95"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/50 to-primary/95"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col items-center text-center pt-16 sm:pt-20 pb-24 sm:pb-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col items-center text-center pt-16 sm:pt-20 pb-32 sm:pb-40">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -76,13 +76,13 @@ export default function Home() {
             className="max-w-5xl flex flex-col items-center"
           >
             <motion.div variants={fadeUp} className="inline-flex items-center gap-2 glass text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-6 sm:mb-8 shadow-2xl border-white/20">
-              <Star className="w-3 h-3 sm:w-4 sm:h-4 text-accent fill-accent" />
+              <Star className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400 fill-blue-400" />
               Stanislaus County's Premier Service
             </motion.div>
             
             <motion.h1 variants={fadeUp} className="text-5xl sm:text-6xl md:text-8xl lg:text-[8rem] font-black text-white leading-[0.9] tracking-tighter mb-6 sm:mb-8 font-heading">
               ELEVATING <br />
-              <span className="text-gradient">EXTERIORS.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0066ff] to-[#3b82f6]">EXTERIORS.</span>
             </motion.h1>
             
             <motion.p variants={fadeUp} className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-10 sm:mb-12 max-w-3xl font-light leading-relaxed px-2">
@@ -90,7 +90,7 @@ export default function Home() {
             </motion.p>
             
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center w-full sm:w-auto px-4 sm:px-0">
-              <Link to="/contact" className="w-full sm:w-auto bg-accent hover:bg-white hover:text-primary text-white px-8 sm:px-12 py-4 sm:py-6 rounded-full font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 shadow-[0_0_40px_rgba(0,102,255,0.4)] flex items-center justify-center gap-3 uppercase tracking-widest group">
+              <Link to="/contact" className="w-full sm:w-auto bg-blue-600 hover:bg-white hover:text-primary text-white px-8 sm:px-12 py-4 sm:py-6 rounded-full font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 shadow-[0_0_40px_rgba(37,99,235,0.4)] flex items-center justify-center gap-3 uppercase tracking-widest group">
                 Get a Free Quote <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
               </Link>
             </motion.div>
@@ -148,7 +148,7 @@ export default function Home() {
               <h2 className="text-xs sm:text-sm font-bold text-accent uppercase tracking-[0.2em] mb-3 sm:mb-4">Our Expertise</h2>
               <h3 className="text-4xl sm:text-5xl md:text-7xl font-black text-primary tracking-tighter leading-[0.9] font-heading">
                 PRECISION CLEANING & <br />
-                <span className="text-gradient">PREMIUM UPGRADES</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0066ff] to-[#3b82f6]">PREMIUM UPGRADES</span>
               </h3>
             </div>
             <Link to="/services" className="inline-flex items-center justify-center gap-3 bg-white text-primary border border-gray-200 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl text-sm sm:text-base w-full md:w-auto">
@@ -210,7 +210,7 @@ export default function Home() {
           >
             <h2 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-6 sm:mb-8 font-heading">
               NOT JUST CLEAN.<br />
-              <span className="text-gradient">PRIME CONDITION.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0066ff] to-[#3b82f6]">PRIME CONDITION.</span>
             </h2>
             <Link to="/about" className="inline-flex items-center gap-3 text-white font-bold uppercase tracking-widest text-xs sm:text-sm hover:text-accent transition-colors group mt-4 sm:mt-8">
               <span className="border-b-2 border-accent pb-1">Discover Our Story</span>
